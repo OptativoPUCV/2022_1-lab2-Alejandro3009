@@ -171,3 +171,17 @@ list.c:91:9: error: unused variable ‘pizza’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ea57a64
+Sat Mar 19 20:16:57 UTC 2022: 
+ list.c | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:95:21: error: ‘pizza’ undeclared (first use in this function)
+     list->current = pizza;
+                     ^~~~~
+list.c:95:21: note: each undeclared identifier is reported only once for each function it appears in
+list.c:109:5: error: expected ‘;’ before ‘list’
+     list->current->next->prev = chirimoya;
+     ^~~~
+Compilation failed
+d88603e

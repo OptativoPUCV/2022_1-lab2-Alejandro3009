@@ -88,7 +88,28 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
-  Node *pizza = createNode(data);
+  Node *chirimoya = createNode(data);
+
+  if(list->current == NULL)
+  {
+    list->current = pizza;
+    list->head = pizza;
+    list->tail = pizza;
+  }
+  
+  if(list->current->next == NULL)
+  {
+    list->current->next = chirimoya;
+    list->tail = chirimoya;
+    chirimoya->prev = list->current;
+  }
+  else
+  {
+    chirimoya->next = list->current->next
+    list->current->next->prev = chirimoya;
+    list->current->next = chirimoya;
+    chirimoya->prev = list->current;
+  }
 }
 
 void * popFront(List * list) {
