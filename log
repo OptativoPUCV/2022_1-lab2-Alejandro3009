@@ -160,3 +160,14 @@ Sat Mar 19 19:46:19 UTC 2022:
  tests:  10|2
 total_score: 45/70
 1166657
+Sat Mar 19 19:50:28 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:91:9: error: unused variable ‘pizza’ [-Werror=unused-variable]
+   Node *pizza = createNode(data);
+         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ea57a64
