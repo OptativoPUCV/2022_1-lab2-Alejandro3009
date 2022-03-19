@@ -29,7 +29,7 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List *rem = (list *) malloc (sizeof(list));
+  List *rem = (List *) malloc (sizeof(list));
   rem->head = NULL;
   rem->tail = NULL;
   rem->curret = NULL;
@@ -37,7 +37,7 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  list.current = list.head;
+  list->current = list->head;
   return list->current->data;
 }
 
