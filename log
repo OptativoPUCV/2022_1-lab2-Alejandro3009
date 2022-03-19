@@ -185,3 +185,13 @@ list.c:109:5: error: expected ‘;’ before ‘list’
      ^~~~
 Compilation failed
 d88603e
+Sat Mar 19 20:17:10 UTC 2022: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:109:5: error: expected ‘;’ before ‘list’
+     list->current->next->prev = chirimoya;
+     ^~~~
+Compilation failed
+d14f82b

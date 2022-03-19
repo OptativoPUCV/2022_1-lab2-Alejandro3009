@@ -92,9 +92,9 @@ void pushCurrent(List * list, void * data) {
 
   if(list->current == NULL)
   {
-    list->current = pizza;
-    list->head = pizza;
-    list->tail = pizza;
+    list->current = chirimoya;
+    list->head = chirimoya;
+    list->tail = chirimoya;
   }
   
   if(list->current->next == NULL)
