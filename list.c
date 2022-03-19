@@ -59,7 +59,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  node *pizza = createNode(data);
+  Node *pizza = createNode(data);
   if(list->head != NULL)
   {
     pizza->next = list->head;
