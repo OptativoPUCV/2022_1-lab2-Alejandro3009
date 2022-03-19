@@ -105,7 +105,7 @@ void pushCurrent(List * list, void * data) {
   }
   else
   {
-    chirimoya->next = list->current->next
+    chirimoya->next = list->current->next;
     list->current->next->prev = chirimoya;
     list->current->next = chirimoya;
     chirimoya->prev = list->current;

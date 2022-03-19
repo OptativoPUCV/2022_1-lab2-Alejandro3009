@@ -195,3 +195,9 @@ list.c:109:5: error: expected ‘;’ before ‘list’
      ^~~~
 Compilation failed
 d14f82b
+Sat Mar 19 20:17:24 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+3db50a6
