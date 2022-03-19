@@ -1,0 +1,55 @@
+Sat Mar 19 19:29:21 UTC 2022: 
+ list.c | 33 ++++++++++++++++++++++++++++-----
+ 1 file changed, 28 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:16: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   List *rem = (list *) malloc (sizeof(list));
+                ^~~~
+                List
+list.c:32:16: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:22: error: expected expression before ‘)’ token
+   List *rem = (list *) malloc (sizeof(list));
+                      ^
+list.c:35:8: error: ‘List {aka struct List}’ has no member named ‘curret’; did you mean ‘current’?
+   rem->curret = NULL;
+        ^~~~~~
+        current
+list.c: In function ‘firstList’:
+list.c:40:7: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   list.current = list.head;
+       ^
+       ->
+list.c:40:22: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   list.current = list.head;
+                      ^
+                      ->
+list.c: In function ‘pushFront’:
+list.c:62:3: error: unknown type name ‘node’; did you mean ‘Node’?
+   node *pizza = createNode(data);
+   ^~~~
+   Node
+list.c:62:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   node *pizza = createNode(data);
+                 ^~~~~~~~~~
+list.c:65:10: error: request for member ‘next’ in something not a structure or union
+     pizza->next = list->head;
+          ^~
+list.c:66:22: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->head->prev = pizza;
+                      ^
+list.c:67:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->head = pizza;
+                ^
+list.c:71:19: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->current = pizza;
+                   ^
+list.c:72:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->head = pizza;
+                ^
+list.c:73:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->tail = pizza;
+                ^
+cc1: all warnings being treated as errors
+Compilation failed
+a01ea4c
