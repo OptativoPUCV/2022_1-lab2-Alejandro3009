@@ -211,3 +211,8 @@ Sat Mar 19 20:46:38 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 93cb0dd
+Sat Mar 19 22:34:09 UTC 2022: 
+ list.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+ tests:  0|0
+09f3a54

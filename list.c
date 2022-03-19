@@ -127,11 +127,10 @@ void * popCurrent(List * list)
   void * aux = list->current->data;
   Node * auxNodo;
 
-  if(list->head->data == list->current->data)
+  if(list->head == list->current)
   {
     list->current->next = list->head;
-    free(list->current);
-    list->head->prev = NULL; //paso sus
+    free(list->current); //paso sus
     list->current = list->head;
     return aux;
   }
@@ -139,8 +138,7 @@ void * popCurrent(List * list)
   if(list->tail == list->current)
   {
     list->current->prev = list->tail;
-    free(list->current);
-    list->tail->next = NULL; //paso sus
+    free(list->current); //paso sus
     list->current = NULL; 
     return aux;
   }
