@@ -29,10 +29,10 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List *rem = (List *) malloc (sizeof(list));
+  List *rem = (List*) malloc (sizeof(List));
   rem->head = NULL;
   rem->tail = NULL;
-  rem->curret = NULL;
+  rem->current = NULL;
   return rem;
 }
 

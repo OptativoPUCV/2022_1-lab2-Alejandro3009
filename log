@@ -96,3 +96,36 @@ list.c:73:16: error: assignment from incompatible pointer type [-Werror=incompat
 cc1: all warnings being treated as errors
 Compilation failed
 ec01c90
+Sat Mar 19 19:36:13 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:62:3: error: unknown type name ‘node’; did you mean ‘Node’?
+   node *pizza = createNode(data);
+   ^~~~
+   Node
+list.c:62:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   node *pizza = createNode(data);
+                 ^~~~~~~~~~
+list.c:65:10: error: request for member ‘next’ in something not a structure or union
+     pizza->next = list->head;
+          ^~
+list.c:66:22: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->head->prev = pizza;
+                      ^
+list.c:67:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->head = pizza;
+                ^
+list.c:71:19: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->current = pizza;
+                   ^
+list.c:72:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->head = pizza;
+                ^
+list.c:73:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     list->tail = pizza;
+                ^
+cc1: all warnings being treated as errors
+Compilation failed
+d854cc7
