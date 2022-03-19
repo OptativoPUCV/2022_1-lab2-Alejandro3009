@@ -74,7 +74,7 @@ void pushFront(List * list, void * data) {
     list->head->prev = pizza;
     list->head = pizza;
   }
-  if(list->head == NULL)
+  else
   {
     list->current = pizza;
     list->head = pizza;
@@ -122,8 +122,36 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
-    return NULL;
+void * popCurrent(List * list) 
+{
+  void * aux = list->current->data;
+  Node * auxNodo;
+
+  if(list->head == list->current)
+  {
+    list->current->next = list->head;
+    free(list->current);
+    list->head->prev = NULL; //paso sus
+    list->current = list->head;
+    return aux;
+  }
+
+  if(list->tail == list->current)
+  {
+    list->current->prev = list->tail;
+    free(list->current);
+    list->tail->next = NULL; //paso sus
+    list->current = NULL; 
+    return aux;
+  }
+
+  list->current->next = list->current->prev;
+  list->current->prev = list->current->next;
+  auxNodo = list->current->next;
+  free(list->current);
+  list->current = auxNodo;
+  
+  return aux;
 }
 
 void cleanList(List * list) {
