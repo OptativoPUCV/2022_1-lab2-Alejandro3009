@@ -150,20 +150,6 @@ void * popCurrent(List * list)
 
   return save;
 }
-  /*if (list->current->prev == NULL){
-    list->head = list->head->next;
-    list->head->prev = NULL;
-    return save;
-  }
-
-  if (list->current->next == NULL){
-    list->tail = list->tail->prev;
-    list->tail->next = NULL;
-    return save;
-  }
-
-  return save;
-  }*/
 
 void cleanList(List * list) {
     while (list->head != NULL) {
