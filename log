@@ -246,3 +246,14 @@ Mon Mar 21 00:36:27 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 7de1315
+Mon Mar 21 00:38:36 UTC 2022: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:127:10: error: unused variable ‘aux’ [-Werror=unused-variable]
+   void * aux = list->current->data;
+          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+cf2908a
