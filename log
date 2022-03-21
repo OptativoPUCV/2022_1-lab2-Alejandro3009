@@ -318,3 +318,9 @@ list.c:166:3: error: expected identifier or ‘(’ before ‘}’ token
    ^
 Compilation failed
 658eb64
+Mon Mar 21 01:40:22 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  12|0
+total_score: 70/70
+1b68af3

@@ -160,10 +160,10 @@ void * popCurrent(List * list)
     list->tail = list->tail->prev;
     list->tail->next = NULL;
     return save;
-  }*/
+  }
 
   return save;
-  }
+  }*/
 
 void cleanList(List * list) {
     while (list->head != NULL) {
