@@ -364,3 +364,9 @@ test.c:381:17: error: ‘msg’ undeclared (first use in this function); did you
                  ok_msg
 Compilation failed
 9fda314
+Mon Mar 21 01:47:53 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 70/70
+694ec79
