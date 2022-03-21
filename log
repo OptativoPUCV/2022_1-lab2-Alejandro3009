@@ -330,3 +330,37 @@ Mon Mar 21 01:42:20 UTC 2022:
  tests:  12|0
 total_score: 70/70
 381e296
+Mon Mar 21 01:45:44 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘char’
+ char msg[300];
+ ^~~~
+test.c: In function ‘test_first_next’:
+test.c:107:17: error: ‘msg’ undeclared (first use in this function); did you mean ‘ok_msg’?
+         sprintf(msg,"firstList retorna %d",*j);
+                 ^~~
+                 ok_msg
+test.c:107:17: note: each undeclared identifier is reported only once for each function it appears in
+test.c: In function ‘test_last_prev’:
+test.c:180:17: error: ‘msg’ undeclared (first use in this function); did you mean ‘ok_msg’?
+         sprintf(msg,"lastList retorna %d",*j);
+                 ^~~
+                 ok_msg
+test.c: In function ‘test_pushfront’:
+test.c:240:13: error: ‘msg’ undeclared (first use in this function); did you mean ‘ok_msg’?
+     sprintf(msg, "Insertando %d a la lista (pushfront)",*j);
+             ^~~
+             ok_msg
+test.c: In function ‘test_pushcurrent’:
+test.c:307:13: error: ‘msg’ undeclared (first use in this function); did you mean ‘ok_msg’?
+     sprintf(msg, "pushFront(%d)",*j);
+             ^~~
+             ok_msg
+test.c: In function ‘test_popcurrent’:
+test.c:381:17: error: ‘msg’ undeclared (first use in this function); did you mean ‘ok_msg’?
+         sprintf(msg,"PopCurrent retorna %d",*k);
+                 ^~~
+                 ok_msg
+Compilation failed
+9fda314
