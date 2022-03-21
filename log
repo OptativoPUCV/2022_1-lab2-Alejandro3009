@@ -216,3 +216,13 @@ Sat Mar 19 22:34:09 UTC 2022:
  1 file changed, 3 insertions(+), 5 deletions(-)
  tests:  0|0
 09f3a54
+Mon Mar 21 00:29:34 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:129:5: error: expected ‘(’ before ‘)’ token
+   if)
+     ^
+Compilation failed
+e7077b6

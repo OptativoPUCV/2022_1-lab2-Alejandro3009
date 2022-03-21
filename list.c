@@ -126,7 +126,7 @@ void * popCurrent(List * list)
 {
   void * aux = list->current->data;
   Node * auxNodo;
-
+  if)
   if(list->head == list->current)
   {
     list->current->next = list->head;
